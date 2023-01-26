@@ -23,7 +23,3 @@ SELECT last_name, COUNT(last_name) FROM employees GROUP BY last_name HAVING last
 -- 6. Update your query for 'Irena', 'Vidya', or 'Maya'. Use count(*) and GROUP BY to find the number of employees for each gender with those names.
 
 SELECT COUNT(*) FROM employees GROUP BY gender ORDER BY COUNT(*) HAVING first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya';
-
-
-
-# SELECT COUNT(*) FROM employees GROUP BY gender first_name ('Irena', 'Vidya', 'Maya');
