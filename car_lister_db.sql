@@ -67,3 +67,7 @@ FROM ads
 -- insert user example:
 INSERT INTO users (first_name, last_name, email, password)
 VALUES ('John', 'Doe', 'johndoe@example.com', 'secretpassword');
+
+INSERT INTO ads (user_id, title, make, model, year, category)
+VALUES (1, '1969 Mercury Cougar XR-7 390GT', 'Mercury', 'Cougar XR - 7', '1969', 'sedan');
+
