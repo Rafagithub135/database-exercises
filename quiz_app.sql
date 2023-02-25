@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS quiz_app_db;
 CREATE DATABASE quiz_app_db;
 USE quiz_app_db;
 
@@ -52,10 +53,17 @@ CREATE TABLE users_answers (
 
 CREATE TABLE user_type (
     id INT NOT NULL AUTO_INCREMENT,
-    type VARCHAR(30) NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    type BOOLEAN NOT NULL,
     PRIMARY KEY (id)
 );
 
-INSERT INTO user_type (type) VALUES ('admin');
+INSERT INTO user_type (first_name, last_name, type)
+    VALUES ('John', 'Smith', true),
+    ('Mary', 'Doe', false),
+    ('Peter', 'Brady', false),
+    ('Julie', 'Andrews', false);
+
 
 
