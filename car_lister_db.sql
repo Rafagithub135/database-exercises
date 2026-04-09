@@ -45,6 +45,8 @@ CREATE TABLE categories
     mini_van VARCHAR(255)
 );
 
+
+
 -- Create a join table "ad_categories" to store the relationships between ads and categories:
 CREATE TABLE ad_categories
 (
@@ -70,4 +72,3 @@ VALUES ('John', 'Doe', 'johndoe@example.com', 'secretpassword');
 
 INSERT INTO ads (user_id, title, make, model, year, category)
 VALUES (1, '1969 Mercury Cougar XR-7 390GT', 'Mercury', 'Cougar XR - 7', '1969', 'sedan');
-
