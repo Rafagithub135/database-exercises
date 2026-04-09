@@ -44,7 +44,10 @@ CREATE TABLE categories
     hatchback VARCHAR(255),
     mini_van VARCHAR(255)
 );
-#   - Create a join table "ad_categories" to store the relationships between ads and categories:
+
+
+
+-- Create a join table "ad_categories" to store the relationships between ads and categories:
 CREATE TABLE ad_categories
 (
     ad_id       INT,
